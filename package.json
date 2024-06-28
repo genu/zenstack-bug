@@ -7,10 +7,19 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "db:generate": "zenstack generate"
   },
   "dependencies": {
+    "@zenstackhq/runtime": "2.2.4",
     "nuxt": "^3.12.2",
     "vue": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^0.3.13",
+    "eslint": "^9.5.0",
+    "zenstack": "2.2.4"
   }
 }
